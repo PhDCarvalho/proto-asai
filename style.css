@@ -1,0 +1,22 @@
+* {
+    transition: .5s;
+    background-color: var(--bgcol);
+}
+:root {
+    --bgcol:  #FFFFEE;
+    --col01:  #A9D488;
+    --col012: #86A56E;
+    --col02:  #3E7F68;
+    --col03:  #FFD34F;
+}
+body {
+    margin: 0;
+}
+.main {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background-color: var(--col02); */
+    border: solid 1rem var(--col02);
+    border-radius: 1rem;
+}
