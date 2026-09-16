@@ -4,12 +4,15 @@
     font-family: "magra", monospace;
     font-weight: bold;
     color: var(--col02);
+    user-select: none;
 }
 
 img {
     border-radius: .5rem;
 }
-
+a {
+    text-decoration: none;
+}
 .magra-regular {
   font-family: "Magra", sans-serif;
   font-weight: 400;
@@ -121,7 +124,7 @@ header {
     scrollbar-color: var(--col012) transparent;
     scrollbar-width: thick;
     scrollbar-gutter: stable both-edges;
-    overflow-y: scroll;
+    overflow-y: hidden scroll;
     overflow-x: hidden;
 
     display: flex;
