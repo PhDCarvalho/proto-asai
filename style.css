@@ -195,6 +195,7 @@ footer {
     padding: 1rem;
     box-sizing: border-box;
     justify-content: space-around;
+    padding: 0;
     padding-left: 2rem;
     padding-right: 2rem;
     align-items: center;
