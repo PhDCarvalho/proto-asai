@@ -215,6 +215,8 @@ footer {
     border: .5rem var(--col01) solid;
 }.menu_select:hover {
     transform: scale(1.1);
+}.menu_select img {
+    border-radius: 0;
 }
 .carousel {
     height: 100%;
