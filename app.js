@@ -101,8 +101,40 @@ const CONTENT_PREV = [
             </div>
         </div>
     `,
-    ``,
-    ``,
+    ``, //
+    `
+    <a class="access">
+        <div>
+            <span>
+                Meu perfil -
+            </span>
+            <span style="color: var(--col01);">produtor</span>
+        </div>
+        <div>
+            <span style="color: var(--bgcol); font-size: xx-large; line-height: 50%;">></span>
+        </div>
+    </a>
+    <a class="access">
+        <div>
+            <span>
+                Meus funcionários
+            </span>
+        </div>
+        <div>
+            <span style="color: var(--bgcol); font-size: xx-large; line-height: 50%;">></span>
+        </div>
+    </a>
+    <a class="access">
+        <div>
+            <span>
+                Meus fornecedores
+            </span>
+        </div>
+        <div>
+            <span style="color: var(--bgcol); font-size: xx-large; line-height: 50%;">></span>
+        </div>
+    </a>
+    `,
     `
         <a class="access" style="justify-content: space-around;">
             <div style="width: 70%;">
