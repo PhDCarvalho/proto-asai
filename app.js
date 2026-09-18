@@ -28,7 +28,21 @@ const CONTENT_PREV = [
         </div>
         </a>
     `,
-    ``,
+    `
+    <a class="access"><span>Meus Campos</span></a>
+    <div class="container">
+        <img src="img/assets/v9_29.png" alt="Exemplo">                
+        <p>
+            Precipitação: <span style="color: var(--col012);">80%</span><br>
+            Última chuva: <span style="color: var(--col012);">Ontem</span>
+        </p>
+        <p>
+            Próxima colheita: <span style="color: var(--col012);">4/5/2026</span>
+        </p>
+        <span style="color: var(--col012);">-> Mais detalhes...</span>
+    </div>
+    
+    `,
     `
         <a class="access">
             <div>
