@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Magra:wght@400;700&display=swap" rel="stylesheet">
+    <title>Criar</title>
+</head>
+<body>
+    <div class="container nohover">
+        Selecione a opção de criação desejada:
+    </div>
+    
+
+    <a href="add_content.html?add=lot" class="access">
+        <span>
+            Adicionar Lote
+        </span>
+        <div>
+            <span style="color: var(--bgcol); font-size: xx-large; line-height: 80%;">+</span>
+        </div>
+    </a>
+
+    <div style="display: flex; width: 100%; gap: 1vh;">
+
+
+        <a href="add_content.html?add=culture" class="access">
+        <!-- <a class="access" style="filter: saturate(.4); transform: scale(.97);"> -->
+            <span>
+                Adicionar Cultura
+            </span>
+            <div>
+                <span style="color: var(--bgcol); font-size: xx-large; line-height: 80%;">+</span>
+            </div>
+        </a>
+
+        <a href="add_content.html?add=supply" class="access">
+            <span>
+                Adicionar Estoque
+            </span>
+            <div>
+                <span style="color: var(--bgcol); font-size: xx-large; line-height: 80%;">+</span>
+            </div>
+        </a>
+
+    </div>
+
+
+    <div class="sep"></div>
+
+
+    <a href="add_content.html?add=employee" class="access">
+        <img src="img/Icon User.svg" alt="Funcionários">
+        <span>
+            Adicionar Funcionários
+        </span>
+        <div>
+            <span style="color: var(--bgcol); font-size: xx-large; line-height: 80%;">+</span>
+        </div>
+    </div>
+    
+    <a href="add_content.html?add=supplier" class="access">
+        <img src="img/Icon User.svg" alt="Fornecedor">
+        <span>
+            Adicionar Fornecedores
+        </span>
+        <div>
+            <span style="color: var(--bgcol); font-size: xx-large; line-height: 80%;">+</span>
+        </div>
+    </div>
+        
+    
+
+  
+    <script src="islogged.js" type="module"></script>
+    <script src="user.js" type="module"></script>
+    <script src="popup.js" type="module"></script>
+</body>
+</html>
