@@ -15,7 +15,7 @@ if (!loggedIn) {
             break;
 
         case 3:
-            if (!(url.includes('sales') && url.includes('profile') && url.includes('login'))) {
+            if ((!url.includes('sales') && !url.includes('profile') && !url.includes('login'))) {
                 setTimeout(() => {
                     window.location.href = 'profile.html?message=no_access';
                 }, 500);
