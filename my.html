@@ -11,7 +11,89 @@
     <title>Culturas</title>
 </head>
 <body>
-    Tela de Culturas
+    
+    <div class="access">
+        Criar Atividade de Campo
+    </div>
+    <div class="sep"></div>
+
+    <div class="access nohover">
+        Lotes e Culturas registradas
+    </div>
+
+
+    <div class="container" style="display: flex; gap: .8rem; flex-direction: column;">
+        <div style="width: 100%; display: flex; flex-direction: row;">
+            <img src="img/Home.svg" class="svg_icon" style="height: 1rem; width: 2rem; padding: .75rem; border-radius: .7rem;">
+            <h2 style="margin: .4rem;">
+                Lote 1
+            </h2>
+        </div>
+        <div style="width: 100%; gap: .7rem; justify-content: space-evenly;">
+            Localização: <span style="color: var(--col012);">Rua Bom Plantio</span><br>
+        </div>
+
+        <div class="container nohover" style="border: .2rem var(--col02) solid; background-color: var(--col00a);">
+            <div style="width: 100%; display: flex; flex-direction: row;">
+                <img src="img/Leaf.svg" class="svg_icon" style="height: 1rem; width: 2rem; padding: .75rem; border-radius: .7rem;">
+                <h2 style="margin: .4rem;">
+                    Campo de Milho
+                </h2>
+            </div>
+            <div style="width: 100%; gap: .7rem; justify-content: space-evenly;">
+                Área: <span style="color: var(--col012);">3000 m²</span><br>
+                Última colheita: <span style="color: var(--col012);">08-11-2026</span>
+            </div>
+        </div>
+
+        <div class="container nohover" style="border: .2rem var(--col02) solid; background-color: var(--col00a);">
+            <div style="width: 100%; display: flex; flex-direction: row;">
+                <img src="img/Leaf.svg" class="svg_icon" style="height: 1rem; width: 2rem; padding: .75rem; border-radius: .7rem;">
+                <h2 style="margin: .4rem;">
+                    Campo de Soja
+                </h2>
+            </div>
+            <div style="width: 100%; gap: .7rem; justify-content: space-evenly;">
+                Área: <span style="color: var(--col012);">4500 m²</span><br>
+                Última colheita: <span style="color: var(--col012);">20-10-2026</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container" style="display: flex; gap: .8rem; flex-direction: column;">
+        <div style="width: 100%; display: flex; flex-direction: row;">
+            <img src="img/Home.svg" class="svg_icon" style="height: 1rem; width: 2rem; padding: .75rem; border-radius: .7rem;">
+            <h2 style="margin: .4rem;">
+                Lote 2
+            </h2>
+        </div>
+        <div style="width: 100%; gap: .7rem; justify-content: space-evenly;">
+            Localização: <span style="color: var(--col012);">Rua Bom Plantio</span><br>
+            ⓘ <span style="color: var(--col012);">Sem Culturas cadastradas</span><br>
+        </div>
+
+    </div>
+
+
+    <script type="module">
+        import { getUserData } from './user.js'
+        getUserData()
+        if (userData.userType == 3) {
+            document.body.innerHTML += `
+                <div class="sep"></div>
+                <div class="access">
+                    Criar Anúncio
+                </div>
+            `
+        }
+    </script>
+
+
+
+
+
+
 
     <script src="islogged.js" type="module"></script>
     <script src="user.js" type="module"></script>

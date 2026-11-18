@@ -11,7 +11,73 @@
     <title>Compras e Vendas</title>
 </head>
 <body>
-    Tela de Compras e Vendas
+    <!-- Tela de Compras e Vendas -->
+
+    <div class="access nohover">
+        Estoque de Insumos
+    </div>
+
+
+    <div class="container" style="display: flex; gap: .8rem; flex-direction: column;">
+        <div style="width: 100%; display: flex; flex-direction: row;">
+            <img src="img/Cart.svg" class="svg_icon" style="height: 1rem; width: 2rem; padding: .75rem; border-radius: .7rem;">
+            <h2 style="margin: .4rem;">
+                Adubo Café
+            </h2>
+        </div>
+        <div style="width: 100%; gap: .7rem; justify-content: space-evenly;">
+            Origem: <span style="color: var(--col012);">Silvio</span><br>
+            Quantidade: <span style="color: var(--col012);">50 kg</span><br>
+            Data de compra: <span style="color: var(--col012);">08-11-2026</span>
+        </div>
+    </div>
+
+
+    <div class="container" style="display: flex; gap: .8rem; flex-direction: column;">
+        <div style="width: 100%; display: flex; flex-direction: row;">
+            <img src="img/Cart.svg" class="svg_icon" style="height: 1rem; width: 2rem; padding: .75rem; border-radius: .7rem;">
+            <h2 style="margin: .4rem;">
+                Fertilizante
+            </h2>
+        </div>
+        <div style="width: 100%; gap: .7rem; justify-content: space-evenly;">
+            Origem: <span style="color: var(--col012);">Silvio</span><br>
+            Quantidade: <span style="color: var(--col012);">200 kg</span><br>
+            Data de compra: <span style="color: var(--col012);">08-11-2026</span>
+        </div>
+    </div>
+
+
+    <div class="container" style="display: flex; gap: .8rem; flex-direction: column;">
+        <div style="width: 100%; display: flex; flex-direction: row;">
+            <img src="img/Cart.svg" class="svg_icon" style="height: 1rem; width: 2rem; padding: .75rem; border-radius: .7rem;">
+            <h2 style="margin: .4rem;">
+                Agrotóxicos
+            </h2>
+        </div>
+        <div style="width: 100%; gap: .7rem; justify-content: space-evenly;">
+            Origem: <span style="color: var(--col012);">Silvio</span><br>
+            Quantidade: <span style="color: var(--col012);">100 L</span><br>
+            Data de compra: <span style="color: var(--col012);">08-11-2026</span>
+        </div>
+    </div>
+
+    <script type="module">
+        import { getUserData } from './user.js'
+        getUserData()
+        if (userData.userType == 3) {
+            document.body.innerHTML += `
+                <div class="sep"></div>
+                <div class="access">
+                    Criar Anúncio
+                </div>
+            `
+        }
+    </script>
+
+
+
+
 
     <script src="islogged.js" type="module"></script>
     <script src="user.js" type="module"></script>
